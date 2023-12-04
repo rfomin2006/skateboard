@@ -18,6 +18,7 @@ body {
 
 .page {
   margin-inline: auto;
+  display: flex;
 }
 
 .sidebar__logo {
@@ -70,6 +71,26 @@ body {
 
 .name_inactive {
   color: #808191;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 625px;
+  height: 40px;
+  background-color: #353440;
+  border-radius: 40px;
+
+}
+
+.header__searchIcon {
+  padding-right: 15px;
+}
+
+.header__searchText {
+  color: #808191;
+  padding-left: 15px;
 }
 
 .sidebarSection__line {
