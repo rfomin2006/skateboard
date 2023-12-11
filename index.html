@@ -10,26 +10,26 @@
   <div class="page">
     <div class="sidebar">
       <h3 class="sidebar__logo">skateboard</h3>
-      <div class="sidebarSection">
-        <p class="sidebarSection__header">MENU</p>
+      <div class="section">
+        <p class="section__header">MENU</p>
         <ul class="list">
-          <li class="sidebarSection__element"><img src="./image/discover.svg"><p class="element__name name_active">Discover</p></li>
-          <li class="sidebarSection__element"><img src="./image/trending.svg"><p class="element__name name_inactive">Trending</p></li>
-          <li class="sidebarSection__element"><img src="./image/streaming.svg"><p class="element__name name_inactive">Streaming</p></li>
-          <li class="sidebarSection__element"><img src="./image/playlist.svg"><p class="element__name name_inactive">Playlist</p></li>
-          <li class="sidebarSection__element"><img src="./image/bookmark.svg"><p class="element__name name_inactive">Bookmark</p></li>
+          <li><button class="element"><img src="./images/discover.svg"><p class="element__name name_active">Discover</p></button></li>
+          <li><button class="element"><img src="./images/trending.svg"><p class="element__name name_inactive">Trending</p></button></li>
+          <li><button class="element"><img src="./images/streaming.svg"><p class="element__name name_inactive">Streaming</p></button></li>
+          <li><button class="element"><img src="./images/playlist.svg"><p class="element__name name_inactive">Playlist</p></button></li>
+          <li><button class="element"><img src="./images/bookmark.svg"><p class="element__name name_inactive">Bookmark</p></button></li>
         </ul>
-        <hr class="sidebarSection__line">
+        <hr class="section__line">
       </div>
-      <div class="sidebarSection">
-        <p class="sidebarSection__header">CATEGORY</p>
+      <div class="section">
+        <p class="section__header">CATEGORY</p>
         <ul class="list">
-          <li class="sidebarSection__element"><img src="./image/livestream.svg"><p class="element__name name_inactive">Live Stream</p></li>
-          <li class="sidebarSection__element"><img src="./image/trending.svg"><p class="element__name name_inactive">Tutorial</p></li>
-          <li class="sidebarSection__element"><img src="./image/streaming.svg"><p class="element__name name_inactive">Competition</p></li>
-          <li class="sidebarSection__element"><img src="./image/playlist.svg"><p class="element__name name_inactive">Community</p></li>
+          <li><button class="element"><img src="./images/livestream.svg"><p class="element__name name_inactive">Live Stream</p></button></li>
+          <li><button class="element"><img src="./images/trending.svg"><p class="element__name name_inactive">Tutorial</p></button></li>
+          <li><button class="element"><img src="./images/streaming.svg"><p class="element__name name_inactive">Competition</p></button></li>
+          <li><button class="element"><img src="./images/playlist.svg"><p class="element__name name_inactive">Community</p></button></li>
         </ul>
-        <hr class="sidebarSection__line">
+        <hr class="section__line">
       </div>
       <div class="sliderBox">
         <label class="switch">
@@ -40,8 +40,18 @@
       </div>
     </div>
     <header class="header">
-      <div class="header__search"><p class="header__searchText">Search</p><img src="./image/search.svg" class="header__searchIcon"></div>
-      <div class="header__profile"><img src="./image/profile.svg"><p class="profile__name">Thomas</p><img class="profile__arrow" src="./image/profile_arrow.svg"><img class="profile__notification" src="./image/notification.svg"></div>
+      <div>
+        <form class="header__form">
+          <input type="text" placeholder="Search" class="header__search">
+          <button class="header__searchButton"><img src="./images/search.svg" class="header__searchIcon"></button>
+        </form>
+      </div>
+      <div class="header__profile">
+        <img src="./images/profile.svg">
+        <p class="profile__name">Thomas</p>
+        <button class="profile__arrow"><img src="./images/profile_arrow.svg"></button>
+        <button class="profile__notification"><img src="./images/notification.svg"></button>
+      </div>
     </header>
     <div class="content">
 
