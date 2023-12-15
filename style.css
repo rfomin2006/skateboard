@@ -14,6 +14,10 @@
   --clr5: #6c5ecf;
   --clr6: #cccccc;
   --clr7: #34373C;
+  --clr8: #0DAABC;
+  --clr9: #24273081;
+  --clr10: #242730;
+  --clr11: #B7B9D2;
 }
 
 html {
@@ -95,6 +99,165 @@ body {
   margin: 0 50px 0 150px;
 }
 
+.discover__card {
+  font-size: 2rem;
+}
+
+.card_inactive {
+  position: relative;
+  border-radius: 10px;
+  width: 350px;
+  height: 360px;
+}
+
+.discover__title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image_active {
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
+
+.avatar__info {
+  font-size: 0.5em;
+}
+
+.duration__text {
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 20px;
+}
+
+.card__duration {
+  position: absolute;
+  border-radius: 5px;
+  width: 45px;
+  height: 20px;
+  background: var(--clr9);
+}
+
+.duration_positionBottom {
+  bottom: 0.6em;
+  right: 0.6em;
+}
+
+.duration_positionTop {
+  top: 0.6em;
+  right: 0.6em;
+}
+
+.card__avatarBox {
+  position: absolute;
+  display: flex;
+}
+
+.avatarBox_active {
+  align-items: center;
+  gap: 0.4em;
+  bottom: 3em;
+  left: 1.5em;
+}
+
+.avatarBox_inactive {
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4em;
+  bottom: 3em;
+  left: 1.5em;
+}
+
+.card__text {
+  position: absolute;
+  top: 1.5em;
+  left: 1.5em;
+  font-size: 2rem;
+  width: 220px;
+  line-height: 120%;
+}
+
+.cardWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.card_active {
+  width: 725px;
+  height: 360px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.discover {
+  display: flex;
+  flex-direction: column;
+}
+
+.mostWatched {
+  padding-top: 3rem;
+}
+
+.mostWatched__title {
+  margin-bottom: 2rem;
+}
+
+.mostWatched__card {
+  position: relative;
+  width: 260px;
+  height: 310px;
+  border-radius: 10px;
+  background-color: var(--clr10);
+}
+
+.card__avatar {
+  position: absolute;
+  right: 20px;
+  top: 135px;
+}
+
+.card__descripton {
+  position: absolute;
+  top: 175px;
+  left: 20px;
+}
+
+.status {
+  border-radius: 100%;
+  border-width: 3px;
+  border-style: solid;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  right: -13px;
+  bottom: 7px;
+}
+
+.status_online {
+  border-color: green;
+}
+
+.card__username {
+  color: var(--clr11);
+}
+
+.mostWatched__card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.content {
+  position: absolute;
+  top: 100px;
+  left: 320px;
+}
+
 .header__search {
   display: flex;
   align-items: center;
@@ -151,6 +314,9 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  position: absolute;
+  right: 0em;
+  bottom: 3em;
 }
 
 .switch {
