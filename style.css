@@ -6,11 +6,17 @@
   box-sizing: border-box;
 }
 
-:root {
+.darkMode {
   --clr1: #1F1D2B;
-  --clr2: #808191;
   --clr3: #FFFFFF;
   --clr4: #353440;
+}
+
+:root {
+  --clr1: #ffffff;
+  --clr2: #808191;
+  --clr3: #000000;
+  --clr4: #dad9e9;
   --clr5: #6c5ecf;
   --clr6: #cccccc;
   --clr7: #34373C;
@@ -25,6 +31,7 @@ html {
 }
 
 body {
+  transition: background-color 0.5s, color 0.5s;
   background-color: var(--clr1);
   font-family: 'Poppins', sans-serif;
   color: var(--clr3);
@@ -207,6 +214,12 @@ body {
 
 .mostWatched__title {
   margin-bottom: 2rem;
+}
+
+.discover__card:hover {
+  z-index: 1;
+  transition: .5s;
+  transform: scale(1.1);
 }
 
 .mostWatched__card {
