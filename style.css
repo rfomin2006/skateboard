@@ -10,6 +10,9 @@
   --clr1: #1F1D2B;
   --clr3: #FFFFFF;
   --clr4: #353440;
+  --clr9: #24273081;
+  --clr10: #242730;
+  --clr11: #B7B9D2;
 }
 
 :root {
@@ -21,9 +24,9 @@
   --clr6: #cccccc;
   --clr7: #34373C;
   --clr8: #0DAABC;
-  --clr9: #24273081;
-  --clr10: #242730;
-  --clr11: #B7B9D2;
+  --clr9: #dad9e981;
+  --clr10: #dad9e9;
+  --clr11: #42434d;
 }
 
 html {
@@ -85,6 +88,12 @@ body {
   margin: 0;
 }
 
+.recomendationsCardWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 .list {
   list-style: none;
 }
@@ -104,6 +113,7 @@ body {
   height: 100px;
   width: 100%;
   margin: 0 50px 0 150px;
+  gap: 250px;
 }
 
 .discover__card {
@@ -248,17 +258,33 @@ body {
   border-style: solid;
   width: 1px;
   height: 1px;
-  position: absolute;
-  right: -13px;
-  bottom: 7px;
 }
 
 .status_online {
   border-color: green;
 }
 
+.status_offline {
+  border-color: #FF7551;
+}
+
 .card__username {
   color: var(--clr11);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.card__header {
+  color: var(--clr3);
+  width: 210px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.card__date {
+color: var(--clr2);
+padding-top: 20px;
 }
 
 .mostWatched__card img {
@@ -286,6 +312,10 @@ body {
 
 .header__form {
   position: relative;
+}
+
+.header__menu {
+  display: none;
 }
 
 .header__profile {
@@ -387,4 +417,58 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+  .content {
+    left: 20px;
+  }
+  .header {
+    margin: 0 50px 0 20px;
+    gap: 40px;
+  }
+  .header__menu {
+    display: block;
+  }
+  .header__profile {
+    padding-left: 160px;
+  }
+  .discover__card:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cardWrapper {
+    flex-direction: column;
+  }
+  .card_inactive {
+    width: 725px;
+    height: 360px;
+  }
+  .header {
+    margin: 0 30px 0 20px;
+  }
+  .image_inactive {
+    aspect-ratio: 2/1;
+    object-fit: cover;
+  }
+  .header__search {
+    width: 420px;
+  }
+  .header__profile {
+  padding: 0;
+  }
+  .recomendationsCardWrapper {
+    grid-template-columns: repeat(2, 260px);
+    justify-content: center;
+    column-gap: 70px;
+  }
+  .page {
+    width: max-content;
+  }
 }
