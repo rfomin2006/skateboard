@@ -8,8 +8,9 @@
   <title>Document</title>
 </head>
 <body id="body">
+  <div class="overlay" id="overlay"></div>
   <div class="page">
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
       <h3 class="sidebar__logo">skateboard</h3>
       <div class="section">
         <p class="section__header">MENU</p>
@@ -41,7 +42,7 @@
       </div>
     </div>
     <header class="header">
-      <img src="./images/menu.svg" class="header__menu">
+      <img src="./images/menu.svg" class="header__menu" id="menuButton">
       <div>
         <form class="header__form">
           <input type="text" placeholder="Search" class="header__search">
@@ -55,7 +56,7 @@
         <button class="profile__notification"><img src="./images/notification.svg"></button>
       </div>
     </header>
-    <div class="content">
+    <!-- <div class="content">
       <div class="discover">
         <h2 class="discover__title">Discover</h2>
         <div class="cardWrapper">
@@ -66,7 +67,10 @@
               and how to
               landing safely</h2>
               <div class="card__avatarBox avatarBox_active">
-                <img src="./images/avatar1.svg">
+                <div class="avatarStroke">
+                  <img class="avatar__image" src="./images/avatar1.png">
+                  <img class="avatar__verified" src="./images/verified1.svg">
+                </div>
                 <div class="avatar__info">
                   <h4>Thomas Hope</h4>
                   <p>53K views  •  2 weeks ago</p>
@@ -88,7 +92,10 @@
                 <h4>Tony Andrew</h4>
                 <p>53K views  •  2 weeks ago</p>
               </div>
-              <img src="./images/avatar2.svg">
+              <div class="avatarStroke">
+                <img class="avatar__image" src="./images/avatar2.png">
+                <img class="avatar__verified" src="./images/verified2.svg">
+              </div>
             </div>
             <div class="card__duration duration_positionBottom">
               <p class="duration__text">10 min</p>
@@ -104,7 +111,10 @@
             <div class="card__duration duration_positionTop">
               <p class="duration__text">7 min</p>
             </div>
-            <img class="card__avatar" src="./images/avatar3.svg">
+            <div class="avatarStroke card__avatar">
+              <img class="avatar__image" src="./images/avatar3.png">
+              <img class="avatar__verified" src="./images/verified3.svg">
+            </div>
             <div class="card__descripton">
               <div class="card__username">
                 <p>Andy William</p>
@@ -119,13 +129,16 @@
             <div class="card__duration duration_positionTop">
               <p class="duration__text">7 min</p>
             </div>
-            <img class="card__avatar" src="./images/avatar4.svg">
+            <div class="avatarStroke card__avatar">
+              <img class="avatar__image" src="./images/avatar4.png">
+              <img class="avatar__verified" src="./images/verified3.svg">
+            </div>
             <div class="card__descripton">
               <div class="card__username">
                 <p>Johny Wise</p>
                 <div class="status status_offline"></div>
               </div>
-              <p class="card__header">Basic how to ride your skateboard comfortly</p>
+              <p class="card__header">Prepare for your first skateboard jump</p>
               <p class="card__date">53K views  •  2 weeks ago</p>
             </div>
           </div>
@@ -134,13 +147,16 @@
             <div class="card__duration duration_positionTop">
               <p class="duration__text">7 min</p>
             </div>
-            <img class="card__avatar" src="./images/avatar5.svg">
+            <div class="avatarStroke card__avatar">
+              <img class="avatar__image" src="./images/avatar5.png">
+              <img class="avatar__verified" src="./images/verified3.svg">
+            </div>
             <div class="card__descripton">
               <div class="card__username">
                 <p>Budi Hakim</p>
                 <div class="status status_offline"></div>
               </div>
-              <p class="card__header">Basic how to ride your skateboard comfortly</p>
+              <p class="card__header">Tips to playing skateboard on the ramp</p>
               <p class="card__date">53K views  •  2 weeks ago</p>
             </div>
           </div>
@@ -149,19 +165,22 @@
             <div class="card__duration duration_positionTop">
               <p class="duration__text">7 min</p>
             </div>
-            <img class="card__avatar" src="./images/avatar6.svg">
+            <div class="avatarStroke card__avatar">
+              <img class="avatar__image" src="./images/avatar6.png">
+              <img class="avatar__verified" src="./images/verified3.svg">
+            </div>
             <div class="card__descripton">
               <div class="card__username">
                 <p class="card__username">Wijaya Abadi</p>
                 <div class="status status_online"></div>
               </div>
-              <p class="card__header">Basic how to ride your skateboard comfortly</p>
+              <p class="card__header">Basic Equipment to play skateboard safely</p>
               <p class="card__date">53K views  •  2 weeks ago</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </body>
 </html>
