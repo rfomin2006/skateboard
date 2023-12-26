@@ -8,47 +8,44 @@
   <title>Document</title>
 </head>
 <body id="body">
-  <div class="overlay" id="overlay"></div>
-  <div class="page">
-    <div class="sidebar" id="sidebar">
-      <h3 class="sidebar__logo">skateboard</h3>
-      <div class="section">
-        <p class="section__header">MENU</p>
-        <ul class="list">
-          <li><button class="element"><img src="./images/discover.svg"><p class="element__name name_active">Discover</p></button></li>
-          <li><button class="element"><img src="./images/trending.svg"><p class="element__name name_inactive">Trending</p></button></li>
-          <li><button class="element"><img src="./images/streaming.svg"><p class="element__name name_inactive">Streaming</p></button></li>
-          <li><button class="element"><img src="./images/playlist.svg"><p class="element__name name_inactive">Playlist</p></button></li>
-          <li><button class="element"><img src="./images/bookmark.svg"><p class="element__name name_inactive">Bookmark</p></button></li>
-        </ul>
-        <hr class="section__line">
-      </div>
-      <div class="section">
-        <p class="section__header">CATEGORY</p>
-        <ul class="list">
-          <li><button class="element"><img src="./images/livestream.svg"><p class="element__name name_inactive">Live Stream</p></button></li>
-          <li><button class="element"><img src="./images/trending.svg"><p class="element__name name_inactive">Tutorial</p></button></li>
-          <li><button class="element"><img src="./images/streaming.svg"><p class="element__name name_inactive">Competition</p></button></li>
-          <li><button class="element"><img src="./images/playlist.svg"><p class="element__name name_inactive">Community</p></button></li>
-        </ul>
-        <hr class="section__line">
-      </div>
-      <div class="sliderBox">
-        <label class="switch">
-          <input type="checkbox" id="slider" >
-          <span class="slider round"></span>
-        </label>
-        <p class="slider__text">Night mode</p>
-      </div>
+  <div class="sidebar" id="sidebar">
+    <h3 class="sidebar__logo">skateboard</h3>
+    <div class="section">
+      <p class="section__header">MENU</p>
+      <ul class="list">
+        <li><button class="element"><img src="./images/discover.svg"><p class="element__name name_active">Discover</p></button></li>
+        <li><button class="element"><img src="./images/trending.svg"><p class="element__name name_inactive">Trending</p></button></li>
+        <li><button class="element"><img src="./images/streaming.svg"><p class="element__name name_inactive">Streaming</p></button></li>
+        <li><button class="element"><img src="./images/playlist.svg"><p class="element__name name_inactive">Playlist</p></button></li>
+        <li><button class="element"><img src="./images/bookmark.svg"><p class="element__name name_inactive">Bookmark</p></button></li>
+      </ul>
+      <hr class="section__line">
     </div>
+    <div class="section">
+      <p class="section__header">CATEGORY</p>
+      <ul class="list">
+        <li><button class="element"><img src="./images/livestream.svg"><p class="element__name name_inactive">Live Stream</p></button></li>
+        <li><button class="element"><img src="./images/trending.svg"><p class="element__name name_inactive">Tutorial</p></button></li>
+        <li><button class="element"><img src="./images/streaming.svg"><p class="element__name name_inactive">Competition</p></button></li>
+        <li><button class="element"><img src="./images/playlist.svg"><p class="element__name name_inactive">Community</p></button></li>
+      </ul>
+      <hr class="section__line">
+    </div>
+    <div class="sliderBox">
+      <label class="switch">
+        <input type="checkbox" id="slider" >
+        <span class="slider round"></span>
+      </label>
+      <p class="slider__text">Night mode</p>
+    </div>
+  </div>
+  <div class="page">
     <header class="header">
       <img src="./images/menu.svg" class="header__menu" id="menuButton">
-      <div>
-        <form class="header__form">
-          <input type="text" placeholder="Search" class="header__search">
-          <button class="header__searchButton"><img src="./images/search.svg" class="header__searchIcon"></button>
-        </form>
-      </div>
+      <form class="header__form">
+        <input type="text" placeholder="Search" class="header__search">
+        <button class="header__searchButton"><img src="./images/search.svg" class="header__searchIcon"></button>
+      </form>
       <div class="header__profile">
         <img src="./images/profile.svg">
         <p class="profile__name">Thomas</p>
@@ -56,7 +53,7 @@
         <button class="profile__notification"><img src="./images/notification.svg"></button>
       </div>
     </header>
-    <!-- <div class="content">
+    <div class="content">
       <div class="discover">
         <h2 class="discover__title">Discover</h2>
         <div class="cardWrapper">
@@ -180,7 +177,8 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+    <div class="overlay" id="overlay"></div>
   </div>
 </body>
 </html>
