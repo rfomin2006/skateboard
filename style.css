@@ -495,9 +495,6 @@ input:checked + .slider:before {
     display: none;
     height: 952px;
   }
-  .content {
-    left: 20px;
-  }
   .header {
     gap: 40px;
   }
@@ -570,5 +567,5 @@ input:checked + .slider:before {
   .overlay_active {
   display: block;
   z-index: 1;
-}
+  }
 }
